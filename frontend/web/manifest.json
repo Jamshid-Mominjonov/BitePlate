@@ -1,0 +1,11 @@
+{
+  "name": "BitePlate SRMS",
+  "short_name": "BitePlate",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#1F1B18",
+  "theme_color": "#E0A458",
+  "description": "BitePlate Smart Restaurant Management System",
+  "orientation": "landscape-primary",
+  "icons": []
+}
