@@ -1,7 +1,7 @@
 [build]
   base = "frontend"
   command = "git clone https://github.com/flutter/flutter.git --depth 1 -b stable && flutter/bin/flutter build web --release"
-  publish = "frontend/build/web"
+  publish = "build/web"
 
 [[redirects]]
   from = "/*"
