@@ -1,8 +1,12 @@
 FROM dart:stable AS build
+
 WORKDIR /app
-COPY pubspec.* ./
-RUN dart pub get
+
+COPY pubspec.yaml pubspec.lock ./
+RUN dart pub get --no-precompile
+
 COPY . .
+RUN dart pub get --offline
 RUN dart compile exe bin/server.dart -o bin/server
 
 FROM debian:bullseye-slim
