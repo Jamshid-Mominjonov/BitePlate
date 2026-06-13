@@ -1,0 +1,11 @@
+@"
+[build]
+  base = "frontend"
+  command = "git clone https://github.com/flutter/flutter.git --depth 1 -b stable && flutter/bin/flutter build web --release"
+  publish = "frontend/build/web"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+"@ | Out-File -FilePath "netlify.toml" -Encoding UTF8
