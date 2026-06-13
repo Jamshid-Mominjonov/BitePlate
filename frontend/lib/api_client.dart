@@ -16,7 +16,7 @@ class ApiException implements Exception {
 class ApiClient {
 
   final String baseUrl;
-  ApiClient({this.baseUrl = 'http://localhost:8080'});
+  ApiClient({this.baseUrl = 'https://biteplate-production.up.railway.app'});
 
   Uri _u(String path) => Uri.parse('$baseUrl$path');
 
